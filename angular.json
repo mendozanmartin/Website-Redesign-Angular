@@ -22,15 +22,20 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/assets/css/vendor.css",
+              "src/assets/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/assets/js/vendor.js",
+              "src/assets/assets/js/app.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -52,7 +57,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 },
                 {
