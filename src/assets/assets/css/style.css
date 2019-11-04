@@ -16904,11 +16904,34 @@ footer {
   -webkit-mask-image: -webkit-radial-gradient(white, black); }
   .photo img {
     width: 100%; }
+  .photo div {
+    display: block;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+  }
   .photo a {
     display: block;
     margin: 0;
     background-size: cover;
     background-position: center; }
+    .photo div::before {
+      border-radius: 0.25rem;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s;
+      -webkit-transition-delay: 0s;
+      -moz-transition-delay: 0s;
+      transition-delay: 0s;
+      opacity: 0;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
     .photo a::before {
       border-radius: 0.25rem;
       -webkit-transition: all 0.2s;
@@ -16927,6 +16950,9 @@ footer {
       background: rgba(0, 0, 0, 0.2); }
   .photo:hover a:before {
     opacity: 0.75; }
+    .photo:hover div:before {
+      opacity:0.75;
+    }
   .photo:hover .photo-caption {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
