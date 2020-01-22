@@ -8,3 +8,48 @@
     border-width: 4px 15px 15px 4px;
     border-color: #6d9eeb;
   }
+
+figure:hover{ 
+  cursor:pointer;
+}
+
+.icon {
+  max-height: 10vh;
+}
+
+
+  .parallax-mountains {
+    /* The image used */
+    background-image: url("../../assets/assets/images/mountains.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 65%;
+  }
+
+  
+  .parallax-desk {
+    /* The image used */
+    background-image: url("../../assets/assets/images/coffee.jpg");
+  
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 640px)  { /* smartphones, Android phones, landscape iPhone */ 
+    .image-cropper {
+      width: 80%;
+    }
+  }
+ 
