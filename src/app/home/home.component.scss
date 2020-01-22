@@ -20,8 +20,9 @@ figure:hover{
 
   .parallax-mountains {
     /* The image used */
-    background-image: url("../../assets/assets/images/mountains.jpg");
   
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/assets/images/mountains.jpg");
+
     /* Full height */
     height: 100%;
   
@@ -31,13 +32,17 @@ figure:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 65%;
+    
   }
 
+  .overlay {
+    background: rgba(0,0,0,0.6);
+  }
   
   .parallax-desk {
     /* The image used */
-    background-image: url("../../assets/assets/images/coffee.jpg");
-  
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/assets/images/coffee.jpg");
+
     /* Full height */
     height: 100%;
     /* Create the parallax scrolling effect */
