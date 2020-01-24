@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private dynamicScriptLoader: ScriptStoreService) { }
 
   ngOnInit() {
-    this.loadScripts();
+    // this.loadScripts();
   }
 
   private loadScripts() {
