@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScriptStoreService } from 'src/services/script-store.service';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dynamicScriptLoader: ScriptStoreService) { }
 
   ngOnInit() {
-    
+    this.loadScripts();
+  }
+
+  private loadScripts() {
+    this.dynamicScriptLoader.load('vendorjs', 'appjs').then(data => {
+      console.log(data)
+      console.log("Scripts loaded succesfully")
+    }).catch(error => console.log(error))
   }
 
   
   downloadResume() {
-    window.open('../assets/assets/Resume.pdf', '_blank')
+    window.open('../assets/Resume.pdf', '_blank')
   }
 
   openWebsite(website: string) {

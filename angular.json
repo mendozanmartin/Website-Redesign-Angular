@@ -28,14 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/assets/css/vendor.css",
-              "src/assets/assets/css/style.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/style.css",
               "src/styles.scss"
           
             ],
             "scripts": [
-              "src/assets/assets/js/vendor.js",
-              "src/assets/assets/js/app.js"
             ]
           },
           "configurations": {
@@ -99,14 +97,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/assets/css/vendor.css",
-              "src/assets/assets/css/style.css",
-              "src/styles.scss"
-          
+              "src/assets/css/vendor.css",
+              "src/assets/css/style.css",
+              "src/styles.scss"          
             ],
             "scripts": [
-              "src/assets/assets/js/vendor.js",
-              "src/assets/assets/js/app.js"
+     
             ]
           }
         },
