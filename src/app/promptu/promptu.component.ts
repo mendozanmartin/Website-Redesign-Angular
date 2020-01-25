@@ -14,4 +14,11 @@ export class PromptuComponent implements OnInit {
 
   }
 
+  openMobileClient() {
+    window.open('https://speechtodrawhack.herokuapp.com','_blank');
+  }
+
+  openDesktopClient() {
+    window.open('https://promptuhack.herokuapp.com', '_blank');
+  }
 }

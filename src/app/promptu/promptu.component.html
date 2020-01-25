@@ -1,63 +1,141 @@
-
-  <body>
-
-
-   
-
-        <!-- hero -->
-        <section class="hero hero-with-header">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class = "d-flex justify-content-between">
-                  <h1 class="text-decorated"><b>Promptu</b></h1>
-                  <!-- <button class="btn text-white" style="background-color: #6d9eeb; outline: 0">View the Github Repo here <i class="icon-github fs-40"></i></button> -->
-                </div>
-                <p class = "fs-20">We have developed a social platform to raise awareness for various social issues. Speak into your phone and see your drawings appear on an eye catching digital billboard.</p>
-              </div>
-            </div>
-            <div class = "row justify-content-center">
-                <img class = "col-md-8" src="../../assets/assets/images/images/promptu.png" alt="" width="100%">
-            </div>
-            
-          </div>    
-        </section>
-        <!-- / hero -->
-        <section class = "container">
-          <div class="row justify-content-center">
-            <div class = "col-md-8">
-                <p class = "fs-20 text-black">For the TOHacks-2019 Hackathon, my team and I decided to take on the challenge of bringing light to certain social issues. Instead of tackling one social issue, we decided to tackle all of them. Behold Promptu, the social platform for raising awareness using natural language processing and a unique dataset called Quick Draw by Google.</p>
-            </div>
-              
+<body>
+  <!-- hero -->
+  <section class="hero hero-with-header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="d-flex justify-content-between">
+            <h1 class="text-decorated"><b>Promptu</b></h1>
           </div>
-        </section>
+          <p class="fs-20">
+            We have developed a social platform to raise awareness for various
+            social issues. Speak into your phone and see your drawings appear on
+            an eye catching digital billboard.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img
+            src="../../assets/images/images/promptu.png"
+            alt=""
+            width="100%"
+          />
+          <h4 class="mt-5">
+            How might we create a more approachable and engaging method of
+            learning about social issues?
+          </h4>
+          <p class="fs-20 text-black">
+            One of the problems we identified was that it's fairly difficult to
+            spark a conversation and keep that conversation going through social
+            media. Often times, people walk past a billboard/advertisement where
+            the only call to action is to visit a website. What if you were
+            prompted to speak out and in turn receive information regarding a
+            social issue while leaving your own personal mark?
+          </p>
 
-        <section>
-     
-            <div class="component-example">
-              <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <div class="owl-carousel" data-items="[3,2]" data-margin="10" data-dots="true" data-nav="true">
-                      <figure class="photo">
-                        <img src="../../assets/assets/images/images/promptu/Web 1920 – 2.png" alt="Image">
-                      </figure>
-                      <figure class="photo">
-                        <img src="../../assets/assets/images/images/promptu/Web 1920 – 5.png" alt="Image">
-                      </figure>
-                      <figure class="photo">
-                        <img src="../../assets/assets/images/images/promptu/Web 1920 – 3.png" alt="Image">
-                      </figure>
-                      <figure class="photo">
-                        <img src="../../assets/assets/images/images/promptu/Web 1920 – 4.png" alt="Image">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <h4 class="mt-4">The User Experience</h4>
+          <p class="fs-20 text-black">
+            People who pass by a Promptu billboard (mural) will be invited to
+            visit a website on their mobile device via short URL, NFC or QR
+            code. On the mural, they will see a prompt such as "What's your
+            favourite animal". Through their phone, the user will be able to
+            answer that question and in turn receive 3 drawings sourced from
+            Google's Quickdraw dataset. Once they pick one of the three
+            drawings, they will see their drawing pop up on the big screen with
+            a fact about the animal. On your mobile screen, you will be invited
+            to take action. The action can come in the form of an email
+            subscription, online donations, visiting a website, signing a
+            petition + more. Once a mural becomes full of drawings, the screen
+            will be captured and refreshed (to be stored on external
+            website/social media).
+          </p>
+          <img
+          src="../../assets/images/images/promptu/subway mockup.png"
+          alt=""
+          width="100%"
+          class="mt-2"
+        />
+          <h4 class="mt-4">Next Steps</h4>
+          <p class="fs-20 text-black">
+            We aim to enhance the user experience by integrating a social call
+            to action. Ideally, the finished product would include an option to
+            continue the conversation on social media by sharing the mural via
+            Instagram, Facebook, Snapchat, etc. Utilizing the #ImpactfulPrompts
+            hashtag will generate a beautiful feed of unique murals categorized
+            by topics.
+          </p>
+          <h4 class="mt-4">Technologies used</h4>
+          <ul class = "mt-1">
+            <li class = "fs-20">Google DialogFlow</li>
+            <li class = "fs-20">Node.js + Socket.io</li>
+            <li class = "fs-20">Google Quickdraw Dataset</li>
+            <li class = "fs-20">P5.js</li>
+            <li class = "fs-20">Google Speech-to-Text API</li>
+          </ul>
+          <img
+          src="../../assets/images/images/promptu/Bus Stop MockUp 1.png"
+          alt=""
+          width="100%"
+          class="mt-2"
+        />
+          <h4 class="mt-4">View a live demo</h4>
+          <p class = "fs-20 text-black"> For the demo, please pick from one of the following animals: Lion, Rhino, Sea Turtle, Shark or Tiger</p>
+          <div class="row justify-content-center">
+            <div class="boxed rising col-10 col-md-5 text-center" (click)="openMobileClient()">
+              <h3 >Mobile Client</h3>
+              <img src="../../assets/images/images/promptu/PromptuQR.PNG" alt="Promptu QR" class="image-link">
             </div>
-              </section>
-            
-    
-      </body>
-    
+            <div class="boxed rising col-10 col-md-5 text-center" (click)="openDesktopClient()">
+              <h3 >Desktop Client</h3>
+              <img src="../../assets/images/images/promptu/laptop-2243898_1280.png" alt="Promptu Desktop" class = "image-link">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class = "wireframes">
+    <div class="component-example">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div
+              class="owl-carousel"
+              data-items="[3,2]"
+              data-margin="10"
+              data-dots="true"
+              data-nav="true"
+            >
+              <figure class="photo">
+                <img
+                  src="../../assets/images/images/promptu/Web 1920 – 2.png"
+                  alt="Image"
+                />
+              </figure>
+              <figure class="photo">
+                <img
+                  src="../../assets/images/images/promptu/Web 1920 – 5.png"
+                  alt="Image"
+                />
+              </figure>
+              <figure class="photo">
+                <img
+                  src="../../assets/images/images/promptu/Web 1920 – 3.png"
+                  alt="Image"
+                />
+              </figure>
+              <figure class="photo">
+                <img
+                  src="../../assets/images/images/promptu/Web 1920 – 4.png"
+                  alt="Image"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

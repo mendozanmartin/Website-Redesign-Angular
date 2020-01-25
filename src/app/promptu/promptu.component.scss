@@ -1,0 +1,33 @@
+img {
+    border-radius: 8px;
+}
+h1,h2,h3,h4 {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-weight: 500;
+}
+h4 {
+    font-weight: 500;
+    color: navy;
+}
+
+.boxed.rising {
+    border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.image-link {
+    height: 30vh;
+}
+
+.wireframes {
+    margin-top: -15vh;
+}

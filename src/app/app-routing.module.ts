@@ -14,7 +14,7 @@ import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component'
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: PromptuComponent,
     pathMatch: 'full'
   },
   {
