@@ -33,7 +33,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <ul class="masonry row gutter-2">
+          <ul class="masonry row gutter-1">
             <li class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
               <article class="tile tile-short">
                 <div class="tile-image" style="background-image: url(../assets/images/images/MedExpressLogo.png)"></div>
@@ -47,13 +47,12 @@
             </li>
             <li class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
               <article class="tile tile-short">
-                <div class="tile-image" style="background-image: url(../assets/images/images/promptu.png)"></div>
-          
+                <div class="tile-image" style="background-image: url(../assets/images/images/promptu.png)" [routerLink]="['/promptu']" routerLinkActive="router-link-active" ></div>
               </article>
             </li>
             <li class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
               <article class="tile tile-short">
-                <div class="tile-image" style="background-image: url(../assets/images/images/OrdrUp.PNG)"></div>
+                <div class="tile-image" style="background-image: url(../assets/images/images/OrdrUp.PNG)" [routerLink]="['/ordrup']" routerLinkActive="router-link-active" ></div>
           
               </article>
             </li>

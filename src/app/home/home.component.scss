@@ -9,13 +9,16 @@
     border-color: #6d9eeb;
   }
 
+.col-12.col-md-6.col-lg-4 {
+  cursor: pointer;
+}
 figure:hover{ 
   cursor:pointer;
 }
 
 .project-gallery {
   margin-top: -10vh;
-  margin-bottom: -10vh;
+  margin-bottom: -75px;
 }
 
 .icon {

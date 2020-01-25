@@ -21,4 +21,6 @@ export class PromptuComponent implements OnInit {
   openDesktopClient() {
     window.open('https://promptuhack.herokuapp.com', '_blank');
   }
+  
+
 }

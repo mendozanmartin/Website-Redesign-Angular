@@ -11,6 +11,7 @@ export const ScriptStore :Scripts[] = [
 ];
 
 declare var document: any;
+declare var $:any;
 
 @Injectable({
   providedIn: 'root'
@@ -57,8 +58,25 @@ export class ScriptStoreService {
         }
         script.onerror = (error: any) => resolve({script: name, loaded: false, status: 'Loaded'});
         document.getElementsByTagName('head')[0].appendChild(script);
-      } else {
-        resolve({ script: name, loaded: true, status: 'Already Loaded' });
+      } 
+      else {
+        // resolve({ script: name, loaded: true, status: 'Already Loaded' });
+        // this.unload(this.scripts[name].src).then(()=> {
+        //   this.load(this.scripts[name].src)
+
+        // })
       }
     });
-  }}
+  }
+
+  unload(...scripts: string[]) {
+    const promises: any[] = [];
+    scripts.forEach((script) => promises.push(this.loadScript(script)));
+    return Promise.all(promises);
+  }
+
+  unloadScript(name: string) {
+    $('script[src="' + this.scripts[name].src + '"]').remove();
+    $('<script>').attr('src', this.scripts[name].src).appendTo('body');
+  }
+}

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ScriptStoreService } from 'src/services/script-store.service';
+import { Router, NavigationEnd, Event } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +9,23 @@ import { ScriptStoreService } from 'src/services/script-store.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private dynamicScriptLoader: ScriptStoreService) { }
+  constructor(private dynamicScriptLoader: ScriptStoreService, private router: Router) { }
 
   ngOnInit() {
     // this.loadScripts();
+    this.router.events.subscribe(
+      (event: Event) => {
+        if (event instanceof NavigationEnd) {
+          this.loadScripts();
+          console.log("Script loaded")
+        }
+      }
+    )
   }
 
+
   private loadScripts() {
-    this.dynamicScriptLoader.load('vendorjs').then(data => {
+    this.dynamicScriptLoader.load('vendorjs', 'appjs').then(data => {
       console.log(data)
       console.log("Scripts loaded succesfully")
     }).catch(error => console.log(error))
