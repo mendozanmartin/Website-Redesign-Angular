@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, ViewChild } from '@angular/core';
 import { ScriptStoreService } from 'src/services/script-store.service';
 import { Router, NavigationEnd, Event } from '@angular/router';
 
@@ -7,7 +7,11 @@ import { Router, NavigationEnd, Event } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
+
 export class HomeComponent implements OnInit {
+
+
 
   constructor(private dynamicScriptLoader: ScriptStoreService, private router: Router) { }
 

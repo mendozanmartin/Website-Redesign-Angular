@@ -30,13 +30,14 @@ import { HungerfreesnapComponent } from './hungerfreesnap/hungerfreesnap.compone
     JackstonesComponent,
     ArduinovacuumComponent,
     RadiothonboothComponent,
-    HungerfreesnapComponent
+    HungerfreesnapComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
