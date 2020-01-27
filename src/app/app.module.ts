@@ -15,7 +15,6 @@ import { RefugeevrexperienceComponent } from './refugeevrexperience/refugeevrexp
 import { JackstonesComponent } from './jackstones/jackstones.component';
 import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component';
 import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.component';
-import { HungerfreesnapComponent } from './hungerfreesnap/hungerfreesnap.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { HungerfreesnapComponent } from './hungerfreesnap/hungerfreesnap.compone
     JackstonesComponent,
     ArduinovacuumComponent,
     RadiothonboothComponent,
-    HungerfreesnapComponent,
     HeaderComponent
   ],
   imports: [

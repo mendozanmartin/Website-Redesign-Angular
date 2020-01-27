@@ -60,7 +60,7 @@ export class ScriptStoreService {
         document.getElementsByTagName('head')[0].appendChild(script);
       } 
       else {
-        // resolve({ script: name, loaded: true, status: 'Already Loaded' });
+        resolve({ script: name, loaded: true, status: 'Already Loaded' });
         // this.unload(this.scripts[name].src).then(()=> {
         //   this.load(this.scripts[name].src)
 

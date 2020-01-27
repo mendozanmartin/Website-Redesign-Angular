@@ -7,7 +7,6 @@ import { RefugeevrexperienceComponent } from './refugeevrexperience/refugeevrexp
 import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.component';
 import { PromptuComponent } from './promptu/promptu.component';
 import { JackstonesComponent } from './jackstones/jackstones.component';
-import { HungerfreesnapComponent } from './hungerfreesnap/hungerfreesnap.component';
 import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component';
 
 
@@ -40,10 +39,6 @@ const routes: Routes = [
   {
     path: 'jackstones',
     component: JackstonesComponent
-  },
-  {
-    path: 'hungerfreesnap',
-    component: HungerfreesnapComponent
   },
   {
     path: 'arduinovacuum',

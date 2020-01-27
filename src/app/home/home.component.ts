@@ -16,15 +16,14 @@ export class HomeComponent implements OnInit {
   constructor(private dynamicScriptLoader: ScriptStoreService, private router: Router) { }
 
   ngOnInit() {
-    // this.loadScripts();
-    this.router.events.subscribe(
-      (event: Event) => {
-        if (event instanceof NavigationEnd) {
-          this.loadScripts();
-          console.log("Script loaded")
-        }
-      }
-    )
+    // this.router.events.subscribe(
+    //   (event: Event) => {
+    //     if (event instanceof NavigationEnd) {
+    //       this.loadScripts();
+    //       console.log("Script loaded")
+    //     }
+    //   }
+    // )
   }
 
 
