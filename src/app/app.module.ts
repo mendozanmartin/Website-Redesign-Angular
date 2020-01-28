@@ -15,6 +15,8 @@ import { RefugeevrexperienceComponent } from './refugeevrexperience/refugeevrexp
 import { JackstonesComponent } from './jackstones/jackstones.component';
 import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component';
 import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.component';
+import { EcosnapComponent } from './ecosnap/ecosnap.component';
+import { MedexpressComponent } from './medexpress/medexpress.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.compone
     JackstonesComponent,
     ArduinovacuumComponent,
     RadiothonboothComponent,
-    HeaderComponent
+    HeaderComponent,
+    EcosnapComponent,
+    MedexpressComponent
   ],
   imports: [
     BrowserModule,

@@ -79,4 +79,18 @@ export class ScriptStoreService {
     $('script[src="' + this.scripts[name].src + '"]').remove();
     $('<script>').attr('src', this.scripts[name].src).appendTo('body');
   }
+
+  forceReloadJS(srcUrlContains) {
+    $.each($('script:empty[src*="' + srcUrlContains + '"]'), function(index, el) {
+      var oldSrc = $(el).attr('src');
+      var t = +new Date();
+      var newSrc = oldSrc + '?' + t;
+  
+      console.log(oldSrc, ' to ', newSrc);
+  
+      $(el).remove();
+      $('<script/>').attr('src', newSrc).appendTo('body');
+    });
+  }
+  
 }

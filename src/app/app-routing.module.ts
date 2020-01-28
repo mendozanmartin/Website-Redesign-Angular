@@ -8,6 +8,8 @@ import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.compone
 import { PromptuComponent } from './promptu/promptu.component';
 import { JackstonesComponent } from './jackstones/jackstones.component';
 import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component';
+import { EcosnapComponent } from './ecosnap/ecosnap.component';
+import { MedexpressComponent } from './medexpress/medexpress.component';
 
 
 const routes: Routes = [
@@ -43,6 +45,14 @@ const routes: Routes = [
   {
     path: 'arduinovacuum',
     component: ArduinovacuumComponent
+  },
+  {
+    path: 'ecosnap',
+    component: EcosnapComponent
+  },
+  {
+    path: 'medexpress',
+    component: MedexpressComponent
   },
   {
     path: '**',

@@ -14,8 +14,9 @@ export class AppComponent implements OnInit {
 
   constructor(private dynamicScriptLoader: ScriptStoreService, location: LocationStrategy) {
     location.onPopState(() => {
-      this.loadScripts();
+      this.loadScripts()
     });
+    
   }
 
   ngOnInit() {
