@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, ElementRef, ViewChild } from '@angular/core';
 import { ScriptStoreService } from 'src/services/script-store.service';
-import { Router, NavigationEnd, Event } from '@angular/router';
+import { Router, NavigationEnd, Event, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-home',

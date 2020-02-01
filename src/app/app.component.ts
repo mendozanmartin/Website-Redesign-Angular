@@ -14,7 +14,8 @@ export class AppComponent implements OnInit {
 
   constructor(private dynamicScriptLoader: ScriptStoreService, location: LocationStrategy) {
     location.onPopState(() => {
-      this.loadScripts()
+      window.location.reload()
+      // this.loadScripts()
     });
     
   }
