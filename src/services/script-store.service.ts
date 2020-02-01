@@ -60,25 +60,13 @@ export class ScriptStoreService {
         document.getElementsByTagName('head')[0].appendChild(script);
       } 
       else {
-        resolve({ script: name, loaded: true, status: 'Already Loaded' });
-        // this.unload(this.scripts[name].src).then(()=> {
-        //   this.load(this.scripts[name].src)
+          resolve({ script: name, loaded: true, status: 'Already Loaded' });
 
-        // })
       }
     });
   }
 
-  unload(...scripts: string[]) {
-    const promises: any[] = [];
-    scripts.forEach((script) => promises.push(this.loadScript(script)));
-    return Promise.all(promises);
-  }
 
-  unloadScript(name: string) {
-    $('script[src="' + this.scripts[name].src + '"]').remove();
-    $('<script>').attr('src', this.scripts[name].src).appendTo('body');
-  }
 
   forceReloadJS(srcUrlContains) {
     $.each($('script:empty[src*="' + srcUrlContains + '"]'), function(index, el) {

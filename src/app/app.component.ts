@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   }
 
   private loadScripts() {
-    this.dynamicScriptLoader.load('vendorjs', 'appjs').then(data => {
+    this.dynamicScriptLoader.load('appjs').then(data => {
       console.log(data)
       console.log("Scripts loaded succesfully")
     }).catch(error => console.log(error))

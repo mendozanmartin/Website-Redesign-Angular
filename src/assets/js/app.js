@@ -62,7 +62,7 @@
         var typed = new Typed("#typed", {
           stringsElement: '#typed-strings',
           typeSpeed: 100,
-          backSpeed: 50,
+          backSpeed: 100,
           backDelay: 2000,
           startDelay: 200,
           loop: true
