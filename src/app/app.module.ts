@@ -17,6 +17,7 @@ import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component'
 import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.component';
 import { EcosnapComponent } from './ecosnap/ecosnap.component';
 import { MedexpressComponent } from './medexpress/medexpress.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MedexpressComponent } from './medexpress/medexpress.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
