@@ -1,7 +1,6 @@
 <app-header></app-header>
-  <!-- header -->
-  <main [@routeAnimations]="prepareRoute(outlet)" class ="content">
-    <router-outlet #outlet = "outlet"></router-outlet>
-
-  </main>
+<!-- header -->
+<div [@myAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
 <app-footer></app-footer>
