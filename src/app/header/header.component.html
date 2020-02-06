@@ -40,9 +40,13 @@
               class="nav-link text-black"
               role="button"
               style="cursor: pointer;"
-              [routerLink]="['/']"
               pageScroll
+              [routerLink]="['/']"
               href="#resume"
+              [pageScrollOffset]="0"
+              [pageScrollDuration]="2000"
+              [pageScrollEasing]="myEasing"
+              [pageScrollInterruptible]="false"
             >
               RESUME
             </a>
@@ -52,8 +56,8 @@
               class="nav-link text-black"
               style="cursor: pointer;"
               role="button"
-              [routerLink]="['/']"
               pageScroll
+              [routerLink]="['/']"
               href="#about"
             >
               ABOUT
@@ -64,8 +68,8 @@
               class="nav-link text-black"
               style="cursor: pointer;"
               role="button"
-              [routerLink]="['/']"
               pageScroll
+              [routerLink]="['/']"
               href="#contact"
             >
               CONTACT
