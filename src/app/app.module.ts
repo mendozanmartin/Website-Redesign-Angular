@@ -21,6 +21,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
 import { NgxPageScrollModule } from "ngx-page-scroll";
 import { NgxTypedJsModule } from "ngx-typed-js";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { NgxTypedJsModule } from "ngx-typed-js";
     BrowserAnimationsModule,
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -474,10 +474,7 @@
                 If you have any questions or want to collaborate, I'd love to
                 hear from you!
               </h5>
-              <form
-                action="https://us-central1-personal-website-ccd53.cloudfunctions.net/sendMail"
-                method="POST"
-              >
+              <form (ngSubmit)="onSubmit(f)" #f="ngForm" ngNativeValidate>
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group">
@@ -489,6 +486,7 @@
                         aria-describedby="name"
                         placeholder="John"
                         name="name"
+                        ngModel
                         required
                       />
                     </div>
@@ -503,6 +501,8 @@
                         aria-describedby="email"
                         placeholder="johndoe@gmail.com"
                         name="email"
+                        required
+                        ngModel
                       />
                     </div>
                   </div>
@@ -521,6 +521,7 @@
                         placeholder="I've got a job for you!"
                         name="subject"
                         required
+                        ngModel
                       />
                     </div>
                   </div>
@@ -540,6 +541,7 @@
                         rows="3"
                         name="message"
                         required
+                        ngModel
                       ></textarea>
                     </div>
                   </div>
@@ -556,6 +558,47 @@
                   </div>
                 </div>
               </form>
+              <!-- Launch Modal -->
+              <div
+                class="modal fade"
+                id="modal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="modalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-end">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true" class="icon-x"></span>
+                      </button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <h3>Message sent!</h3>
+                      <p>
+                        Thank you for reaching out! I will get back to you as
+                        soon as possible
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-block"
+                        data-dismiss="modal"
+                      >
+                        Awesome!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal End -->
             </div>
           </div>
         </div>
