@@ -1,68 +1,67 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { OrdrupComponent } from './ordrup/ordrup.component';
-import { HomeComponent } from './home/home.component';
-import { ChallengeforchangeComponent } from './challengeforchange/challengeforchange.component';
-import { RefugeevrexperienceComponent } from './refugeevrexperience/refugeevrexperience.component';
-import { RadiothonboothComponent } from './radiothonbooth/radiothonbooth.component';
-import { PromptuComponent } from './promptu/promptu.component';
-import { JackstonesComponent } from './jackstones/jackstones.component';
-import { ArduinovacuumComponent } from './arduinovacuum/arduinovacuum.component';
-import { EcosnapComponent } from './ecosnap/ecosnap.component';
-import { MedexpressComponent } from './medexpress/medexpress.component';
-
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { OrdrupComponent } from "./ordrup/ordrup.component";
+import { HomeComponent } from "./home/home.component";
+import { ChallengeforchangeComponent } from "./challengeforchange/challengeforchange.component";
+import { RefugeevrexperienceComponent } from "./refugeevrexperience/refugeevrexperience.component";
+import { RadiothonboothComponent } from "./radiothonbooth/radiothonbooth.component";
+import { PromptuComponent } from "./promptu/promptu.component";
+import { JackstonesComponent } from "./jackstones/jackstones.component";
+import { ArduinovacuumComponent } from "./arduinovacuum/arduinovacuum.component";
+import { EcosnapComponent } from "./ecosnap/ecosnap.component";
+import { MedexpressComponent } from "./medexpress/medexpress.component";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: HomeComponent,
-    pathMatch: 'full'
+    pathMatch: "full"
   },
   {
-  path: 'ordrup',
-  component: OrdrupComponent
+    path: "ordrup",
+    component: OrdrupComponent
   },
   {
-    path: 'challengeforchange',
+    path: "challengeforchange",
     component: ChallengeforchangeComponent
   },
   {
-    path: 'refugeevrexperience',
+    path: "refugeevrexperience",
     component: RefugeevrexperienceComponent
   },
   {
-    path: 'radiothonbooth',
+    path: "radiothonbooth",
     component: RadiothonboothComponent
   },
   {
-    path: 'promptu',
+    path: "promptu",
     component: PromptuComponent
   },
   {
-    path: 'jackstones',
+    path: "jackstones",
     component: JackstonesComponent
   },
   {
-    path: 'arduinovacuum',
+    path: "arduinovacuum",
     component: ArduinovacuumComponent
   },
   {
-    path: 'ecosnap',
+    path: "ecosnap",
     component: EcosnapComponent
   },
   {
-    path: 'medexpress',
+    path: "medexpress",
     component: MedexpressComponent
   },
   {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
+    path: "**",
+    redirectTo: "",
+    pathMatch: "full"
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation:'reload'})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

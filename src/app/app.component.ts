@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ScriptStoreService } from "src/services/script-store.service";
 import { LocationStrategy } from "@angular/common";
-import { RouterOutlet } from "@angular/router";
 import { fadeAnimation } from "./route-animations";
 @Component({
   selector: "app-root",
@@ -14,7 +13,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private dynamicScriptLoader: ScriptStoreService,
-    location: LocationStrategy
+    public location: LocationStrategy
   ) {
     location.onPopState(() => {
       window.location.reload();

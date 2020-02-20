@@ -19,6 +19,7 @@ import { EcosnapComponent } from "./ecosnap/ecosnap.component";
 import { MedexpressComponent } from "./medexpress/medexpress.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
+import { NgxPageScrollModule } from "ngx-page-scroll";
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    NgxPageScrollCoreModule
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
