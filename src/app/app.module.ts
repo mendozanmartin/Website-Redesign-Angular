@@ -20,6 +20,7 @@ import { MedexpressComponent } from "./medexpress/medexpress.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
 import { NgxPageScrollModule } from "ngx-page-scroll";
+import { NgxTypedJsModule } from "ngx-typed-js";
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { NgxPageScrollModule } from "ngx-page-scroll";
     AngularFirestoreModule,
     BrowserAnimationsModule,
     NgxPageScrollCoreModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

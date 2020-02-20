@@ -5468,6 +5468,14 @@ ngx-page-scroll@^7.0.0:
   dependencies:
     tslib "^1.9.0"
 
+ngx-typed-js@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ngx-typed-js/-/ngx-typed-js-1.1.1.tgz#3ee14144dbbe6ea10f089ac4d4994cd7c6aa9e83"
+  integrity sha512-EtzpvTVWIAO2xDImpFl4rE8U/YxsNriN6xZcPzG+hutqWXRUJxwkc0uQlodI+3p4CmhEWldWyYsYpdBdRqm1Rw==
+  dependencies:
+    tslib "^1.9.0"
+    typed.js "^2.0.9"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -7823,6 +7831,11 @@ type-is@~1.6.17, type-is@~1.6.18:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+typed.js@^2.0.9:
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.11.tgz#d298a91f959f11a3803bf48b841a6fadd29640d9"
+  integrity sha512-1ZORHalEyLob34q738mqmwp0pT6syMigB1SZuTItqdhovWBKFIt7I5uVALXAGQZCg2MCtihCt6uqkoqPJK+9iQ==
 
 typedarray@^0.0.6:
   version "0.0.6"

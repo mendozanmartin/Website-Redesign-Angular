@@ -7,17 +7,21 @@
         width="600"
         alt=""
       />
-      <h2 class="m-0 ml-2 p-0">
-        Driving
-        <span id="typed" style="font-weight: 500; color: #6d9eeb;"></span>into
-        digital solutions.
-      </h2>
-      <div id="typed-strings">
-        <p>creativity</p>
-        <p>innovation</p>
-        <p>functionality</p>
-        ...
-      </div>
+
+      <ngx-typed-js
+        [strings]="['creativity', 'innovation', 'functionality']"
+        [loop]="true"
+        [typeSpeed]="105"
+        [backSpeed]="75"
+        [backDelay]="1800"
+      >
+        <h2 class="m-0 ml-2 p-0">
+          Driving
+          <span class="typing" style="font-weight: 500; color: #6d9eeb"></span
+          >into digital solutions.
+        </h2>
+      </ngx-typed-js>
+
       <ul class="socials">
         <li>
           <a
