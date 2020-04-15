@@ -3,7 +3,7 @@ import {
   OnInit,
   OnDestroy,
   ElementRef,
-  ViewChild
+  ViewChild,
 } from "@angular/core";
 import { ScriptStoreService } from "src/services/script-store.service";
 import { Router, NavigationEnd, Event, NavigationStart } from "@angular/router";
@@ -14,7 +14,7 @@ declare var $: any;
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"]
+  styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
   constructor(
@@ -34,11 +34,11 @@ export class HomeComponent implements OnInit {
   private loadScripts() {
     this.dynamicScriptLoader
       .load("appjs")
-      .then(data => {
+      .then((data) => {
         console.log(data);
         console.log("Scripts loaded succesfully");
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   }
 
   downloadResume() {
@@ -61,6 +61,10 @@ export class HomeComponent implements OnInit {
         break;
       case "vimeo":
         window.open("https://vimeo.com/user100529261", "_blank");
+        break;
+      case "devpost":
+        window.open("https://devpost.com/mendozanmartin", "_blank");
+        break;
     }
   }
 
@@ -72,10 +76,10 @@ export class HomeComponent implements OnInit {
       name: f.value.name,
       email: f.value.email,
       subject: f.value.subject,
-      message: f.value.message
+      message: f.value.message,
     };
     const header = {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     };
 
     this.http.post(url, body, { headers: header }).subscribe((data: any) => {
